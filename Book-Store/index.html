@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="four columns">
+                    <img src="" id="logo">
+                </div>
+
+                <div class="two columns u-pull-right">
+                    <ul class="submenu">
+                        <li>
+                            <img src="assets/img/shopping_cart.png" id="shopping-cart">
+                            <div id="shopCart">
+                                <table id="list-shopCart" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Image</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th>Amount</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="clean-cart" class="button u-full-width">Empty</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-----------Portada------------------>
+    <div id="frontPage">
+        <img src="assets/img/portada.jpg" class="frontPage-img">
+        <div class="container-frontPage">
+            <div class="row">
+                    <div class="content-frontPage">
+                        <h2>Search something new</h2>
+                        <form action="#" id="search" method="post" class="search-form">
+                            <div class="input-wrapper">
+                                <input class="u-full-width" type="text" placeholder="What would you like to learn?" id="searcher">
+                                <img src="assets/img/lupa.png" class="lupa">
+                            </div>
+                            
+                        </form>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <!---------Section---------------------->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icon1">
+                    <img src="assets/img/icon1.png">
+                    <p>Dictionary</p>
+                </div>
+                <div class="four columns icono icon2">
+                    <img src="assets/img/icon2.png">
+                    <p>Borrow a Laptop</p>
+                </div>
+                <div class="four columns icono icon3">
+                    <img src="assets/img/icon3.png">
+                    <p>Borrow a book</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------Entrada Cards-------------->
+    <div id="book-list" class="container">
+        <h1 id="book-list-header">Choose your Category</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/receta-libro.png" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Grandma's recipes</h4>
+                        <p>Mama cooks</p>
+                        <p class="price">$90 <span class="u-pull-right ">$55</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="1">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/a-book.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Homemade Manual</h4>
+                        <p>Food, furniture, sew, crochet, paint, porcelain, and others...</p>
+                        <p class="price">$100 <span class="u-pull-right ">$75</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="2">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/cookbook-german.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>German for begginers</h4>
+                        <p>Malcolm Wolverin</p>
+                        <p class="price">$60 <span class="u-pull-right ">$35</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="3">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/baby-book.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Children's best books</h4>
+                        <p>Learn more about books for children</p>
+                        <p class="price">$50 <span class="u-pull-right ">$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="4">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card"> 
+                    <img src="assets/img/kobo.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Electronic Book</h4>
+                        <p>Choose your favorites</p>
+                        <p class="price">$100 <span class="u-pull-right ">$85</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="5">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/old-books.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Old Dictionary</h4>
+                        <p>English</p>
+                        <p class="price">$130 <span class="u-pull-right ">$55</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="6">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/spell-book.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Magic book</h4>
+                        <p>Gaelico Brigif</p>
+                        <p class="price">$100 <span class="u-pull-right ">$75</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="7">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/colection.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Coleccionable</h4>
+                        <p>Epic books from 30 years</p>
+                        <p class="price">$100 <span class="u-pull-right ">$75</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="8">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/cookbook-english.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Corn Recipies </h4>
+                        <p>Antigues recipies</p>
+                        <p class="price">$100 <span class="u-pull-right ">$75</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="9">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/biblia.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Biblia</h4>
+                        <p>Old Testament</p>
+                        <p class="price">$100 <span class="u-pull-right ">$75</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="10">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/electronic-book.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>Courses name comes here</h4>
+                        <p>name teacher</p>
+                        <p class="price">$100 <span class="u-pull-right ">$75</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="11">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="assets/img/comida.jpg" class="book-image u-full-width">
+                    <div class="card-info">
+                        <h4>James Oliviera Recipies</h4>
+                        <p>100 recipies</p>
+                        <p class="price">$90 <span class="u-pull-right ">$45</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-shopcart" data-id="12">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+    </div>
+
+    <br><hr>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="four columns">
+                    <nav class="nemu">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Legal warning</a></li>
+                            <li><a href="#">General conditions</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav class="nemu">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#"> Work with us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#"> Cookies policy</a></li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+            
+
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
